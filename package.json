@@ -139,7 +139,7 @@
     "terser-webpack-plugin": "1.4.1",
     "webpack": "4.39.2",
     "webpack-cli": "3.3.7",
-    "webpack-dashboard": "3.0.7",
+    "webpack-dashboard": "3.1.0",
     "webpack-dev-server": "3.8.0",
     "webpack-merge": "4.2.2",
     "webpack-redis-plugin": "^1.0.0",
