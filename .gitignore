@@ -30,7 +30,6 @@ packages/api/etc/
 
 # Env
 .env
-babel.config.js
 
 # BOTS
 .whitesource
