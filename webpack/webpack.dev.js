@@ -26,10 +26,14 @@ module.exports = {
               },
             },
           },
-          'sass-loader',
         ],
       },
     ],
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   devServer: {
     contentBase: commonPaths.outputPath,
