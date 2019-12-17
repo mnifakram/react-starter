@@ -103,7 +103,7 @@
     "dotenv-webpack": "^1.7.0",
     "env-cmd": "^10.0.1",
     "enzyme": "3.10.0",
-    "enzyme-adapter-react-16": "1.14.0",
+    "enzyme-adapter-react-16": "1.15.1",
     "eslint": "6.3.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "6.7.0",
