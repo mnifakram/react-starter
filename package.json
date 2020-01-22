@@ -8,7 +8,8 @@
     "start": "env-cmd cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --no-info --open",
     "build": "env-cmd cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
-    "test": "jest --watchAll --coverage"
+    "eslint": "eslint --fix .",
+    "test": "jest --updateSnapshot"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [
