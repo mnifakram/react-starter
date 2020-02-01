@@ -127,7 +127,7 @@
     "jest-fetch-mock": "2.1.2",
     "jsdom": "16.0.1",
     "koa-connect": "2.0.1",
-    "lint-staged": "10.0.3",
+    "lint-staged": "10.0.7",
     "mini-css-extract-plugin": "0.8.0",
     "node-sass": "4.13.1",
     "npm-check-updates": "3.1.21",
