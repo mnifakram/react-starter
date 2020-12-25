@@ -34,7 +34,7 @@ module.exports = {
     // https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366
     splitChunks: {
       cacheGroups: {
-        vendors: {
+        defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
           chunks: 'initial',
@@ -62,10 +62,6 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: false,
-              localsConvention: 'camelCase',
-              modules: {
-                localIdentName: '[local]___[hash:base64:5]',
-              },
             },
           },
         ],
