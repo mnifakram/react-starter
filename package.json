@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@babel/plugin-transform-react-constant-elements": "7.12.1",
-    "@babel/plugin-transform-react-inline-elements": "7.12.1",
+    "@babel/plugin-transform-react-inline-elements": "7.12.13",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "dotenv": "^8.2.0",
