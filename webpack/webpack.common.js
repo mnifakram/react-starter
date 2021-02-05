@@ -1,23 +1,12 @@
-const eslint = require('eslint');
 const webpack = require('webpack');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
   entry: commonPaths.entryPath,
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        loader: 'eslint-loader',
-        exclude: /(node_modules)/,
-        options: {
-          formatter: eslint.CLIEngine.getFormatter('stylish'),
-          emitWarning: process.env.NODE_ENV !== 'production',
-        },
-      },
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
@@ -56,6 +45,10 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.css', '.scss'],
   },
   plugins: [
+    new ESLintPlugin({
+      extensions: ['js', 'jsx'],
+      fix: true,
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         AWS_BUCKET: JSON.stringify(process.env.AWS_BUCKET),
@@ -64,9 +57,6 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
-    }),
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async',
-    }),
+    })
   ],
 };
