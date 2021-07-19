@@ -91,7 +91,7 @@
     "@babel/register": "7.13.16",
     "@babel/runtime": "7.13.17",
     "@hot-loader/react-dom": "^17.0.1",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.6.3",
     "babel-loader": "8.2.2",
